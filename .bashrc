@@ -1,6 +1,6 @@
 alias ls='ls -G'
-alias la='ls -a'
-alias ll='ls -l'
+alias ll='ls -lG'
+alias la='ls -laG'
 
 alias mv='mv -i'
 alias cp='cp -i'
