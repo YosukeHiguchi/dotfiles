@@ -6,6 +6,7 @@ alias mv='mv -i'
 alias cp='cp -i'
 alias rm=rmtrash
 
+alias vim='emacs'
 alias em='emacs -nw'
 alias emacs='emacs -nw'
 
