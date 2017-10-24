@@ -8,6 +8,7 @@ alias rm=rmtrash
 
 alias em='emacs -nw'
 alias emacs='emacs -nw'
+alias emacs='vim'
 
 alias ocaml='rlwrap ocaml'
 
