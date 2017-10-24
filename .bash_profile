@@ -15,5 +15,6 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=$HOME/bin:$PATH
 
 export PATH=/opt/carch/bin:$PATH
