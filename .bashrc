@@ -70,3 +70,7 @@ function cam () {
 function word() {
     open /Applications/Microsoft\ Word.app/
 }
+
+function opcat() {
+    open `cat $1`
+}
