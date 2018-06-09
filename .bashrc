@@ -30,8 +30,8 @@ function mkcd () {
 
 function mktx () {
     git clone https://github.com/YosukeHiguchi/LaTex_Template report > /dev/null 2> /dev/null;
-    rmtrash "report/.git" "report/README.md"
-    if [ -n $1 ]; then
+    rm "report/.git" "report/README.md" "report/preamble_exp.tex";
+    if [ $# -eq 1 ]; then
         mv report $1
     fi
 }
