@@ -63,10 +63,6 @@ function cdl () {
     fi
 }
 
-function cam () {
-    python ~/pythonStudy/camera/camera.py
-}
-
 function word() {
     open /Applications/Microsoft\ Word.app/
 }

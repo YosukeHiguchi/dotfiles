@@ -1,27 +1,27 @@
-;; スクロールを一行ずつにする
+;; scroll line by line
 (setq scroll-conservatively 1)
 
-;; 画面右端で折り返さない
+;; truncate lines
 (setq-default truncate-lines t)
 (setq truncate-partial-width-windows t)
 
-;; no backup
+;; no backup files
 (setq make-backup-files nil)
 
-;; 終了時にオートセーブファイルを削除する
+;; delete auto-save files
 (setq delete-auto-save-files t)
 
-;; 対応する括弧を光らせる
+;; highligh bracket pairs
 (show-paren-mode 1)
 
-;;; "yes or no" の選択を "y or n" にする
+;;; abbreviate 'yes' and 'no' to 'y' and 'n'
 (fset 'yes-or-no-p 'y-or-n-p)
 
-;; 現在の関数名をモードラインに表示
+;; show current function name in command line
 (which-function-mode 1)
 
-;; 括弧の自動補完
+;; bracket/quotation autocomplete 
 (electric-pair-mode 1)
 
-;; タブにスペースを使用する
+;; use spaces instead of tab
 (setq-default tab-width 8 indent-tabs-mode nil)
