@@ -1,19 +1,44 @@
-alias ls='ls -G'
-alias ll='ls -lG'
-alias la='ls -laG'
+PS1="\[\033[36m\]\u:\[\033[33m\]\t\[\033[0m\]\[\033[0m\]\[\033[32m\] \W\[\033[0m\] $ "
 
+# ls aliases
+export LSCOLORS=Exfxcxdxbxegedabagacad
+alias ls="ls -G"
+alias ll="ls -lG"
+alias la="ls -laG"
+alias lsd="ls -lF -G | grep --color=never '^d'"
+
+# grep aliases
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# avoid overwriting another file
 alias mv='mv -i'
 alias cp='cp -i'
 alias rm=rmtrash
 
+# cd aliases
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+# emacs aliases
 alias em='emacs -nw'
 alias emacs='emacs -nw'
 
+# vim aliases
+alias vi='vim'
+
+# ocaml
 alias ocaml='rlwrap ocaml'
 
+# utf encoder
 alias utf='nkf -w --overwrite'
+
+# zip all files in current directory
 alias zipeachdir="find . \! -name '*.zip' \! -name '.' -type d -exec zip -r {}.zip {} \;"
 
+# git aliasess
 alias gb='git branch'
 alias gc='git checkout'
 alias gcb='git checkout -b'
@@ -34,6 +59,10 @@ function mktx () {
     if [ $# -eq 1 ]; then
         mv report $1
     fi
+}
+
+function opcat() {
+    open `cat $1`
 }
 
 function cdl () {
@@ -65,8 +94,4 @@ function cdl () {
 
 function word() {
     open /Applications/Microsoft\ Word.app/
-}
-
-function opcat() {
-    open `cat $1`
 }

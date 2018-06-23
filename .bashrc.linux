@@ -1,0 +1,37 @@
+PS1="\[\033[36m\]\u:\[\033[33m\]\t\[\033[0m\]\[\033[0m\]\[\033[32m\] \W\[\033[0m\] $ "
+
+# ls aliases
+export LSCOLORS=Exfxcxdxbxegedabagacad
+alias ls="ls --color"
+alias ll="ls -l --color"
+alias la="ls -la --color"
+alias lsd="ls -lF -color | grep --color=never '^d'"
+
+# grep aliases
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+# avoid overwriting another file
+alias mv='mv -i'
+alias cp='cp -i'
+alias rm='rm -i'
+
+# cd aliases
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+# emacs aliases
+if emacs --version > /dev/null 2>&1; then
+	alias em='emacs -nw'
+	alias emacs='emacs -nw'
+fi
+
+# vim aliases
+alias vi='vim'
+
+function mkcd () {
+    mkdir $1;
+    cd $1
+}

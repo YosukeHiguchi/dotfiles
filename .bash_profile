@@ -1,6 +1,3 @@
-export LSCOLORS=Exfxcxdxbxegedabagacad
-PS1="\[\033[36m\]\u:\[\033[33m\]\t\[\033[0m\]\[\033[0m\]\[\033[32m\] \W\[\033[0m\] $ "
-
 export PATH=/usr/local/gcc-arm-none-eabi-5_4-2016q2/bin:$PATH
 
 # anaconda
