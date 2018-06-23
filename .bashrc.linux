@@ -31,6 +31,18 @@ fi
 # vim aliases
 alias vi='vim'
 
+# git aliasess
+if git --version > /dev/null 2>&1; then
+   alias gb='git branch'
+   alias gc='git checkout'
+   alias gcb='git checkout -b'
+   alias gs='git status'
+   alias gst='git status'
+   alias gcm='git checkout master'
+   alias gpom='git pull origin master'
+   alias gmm='git merge master'
+fi
+
 function mkcd () {
     mkdir $1;
     cd $1
