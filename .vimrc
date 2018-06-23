@@ -1,7 +1,7 @@
 set encoding=utf-8
 scriptencoding utf-8
 
-# emacs key bindings
+" emacs key bindings
 imap <C-p> <Up>
 imap <C-n> <Down>
 imap <C-b> <Left>
