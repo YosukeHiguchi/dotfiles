@@ -1,0 +1,25 @@
+{
+    "window.zoomLevel": 0,
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.visible": false,
+    "workbench.sideBar.location": "left",
+    "workbench.statusBar.visible": true,
+    "editor.renderWhitespace": "all",
+    "breadcrumbs.enabled": false,
+    "editor.renderControlCharacters": false,
+    "macros": {
+        "ctrl-kToCopy" : [
+            "cursorEndSelect",
+            "editor.action.clipboardCutAction"
+        ],
+        "ctrl-yToPaste" : [
+            "editor.action.clipboardPasteAction"
+        ]
+    },
+    "workbench.panel.defaultLocation": "right",
+    "editor.wordWrap": "on",
+    "workbench.startupEditor": "newUntitledFile",
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "workbench.statusBar.feedback.visible": false
+}
