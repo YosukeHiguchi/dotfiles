@@ -91,7 +91,3 @@ function cdl () {
         cd .;
     fi
 }
-
-function word() {
-    open /Applications/Microsoft\ Word.app/
-}
