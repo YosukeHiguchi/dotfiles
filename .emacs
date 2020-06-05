@@ -25,3 +25,6 @@
 
 ;; use spaces instead of tab
 (setq-default tab-width 8 indent-tabs-mode nil)
+
+;; C-h as delete
+(global-set-key "\C-h" `delete-backward-char)
