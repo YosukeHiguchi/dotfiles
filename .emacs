@@ -20,9 +20,6 @@
 ;; show current function name in command line
 (which-function-mode 1)
 
-;; bracket/quotation autocomplete 
-(electric-pair-mode 1)
-
 ;; use spaces instead of tab
 (setq-default tab-width 8 indent-tabs-mode nil)
 
